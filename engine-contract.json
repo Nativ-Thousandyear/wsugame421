@@ -1,0 +1,100 @@
+﻿{
+    "gameTitle": "Fire and Ice Frontline",
+    "spawnRules": [
+        {
+            "timeLeft": 110,
+            "action": "spawn",
+            "entity": "Imp",
+            "details": {
+                "spawnMethod": "TrySpawnEnemy",
+                "spawnTimeVariable": "lastImpSpawn",
+                "spawnTime": "impSpawnTime",
+                "spawnFunction": "SpawnImp"
+            }
+        },
+        {
+            "timeLeft": 90,
+            "condition": "bossL2Spawned",
+            "action": "spawn",
+            "entity": "L1Mob",
+            "details": {
+                "spawnMethod": "TrySpawnEnemy",
+                "spawnTimeVariable": "lastL1MobSpawn",
+                "spawnTime": "l1MobSpawnTime",
+                "spawnFunction": "SpawnL1Mob"
+            }
+        },
+        {
+            "timeLeft": 70,
+            "action": "spawn",
+            "entity": "L3Boss",
+            "details": {
+                "spawnFlag": "bossL3Spawned",
+                "spawnFunction": "SpawnL3Boss"
+            }
+        },
+        {
+            "timeLeft": 110,
+            "action": "spawn",
+            "entity": "L2Boss",
+            "details": {
+                "spawnFlag": "bossL2Spawned",
+                "spawnFunction": "SpawnL2Boss"
+            }
+        }
+    ],
+    "hero": {
+        "initialHealth": 100,
+        "abilities": [ "shoot", "sprint" ],
+        "upgradePoints": 0
+    },
+
+    "enemyAttributes": {
+        "Imp": {
+            "speed": 1.5,
+            "health": 50,
+            "damage": 10,
+            "behavior": "aggressive"
+        },
+        "L1Mob": {
+            "speed": 1,
+            "health": 100,
+            "damage": 20,
+            "behavior": "defensive"
+        },
+        "L2Boss": {
+            "speed": 0.5,
+            "health": 1000,
+            "damage": 50,
+            "behavior": "boss"
+        },
+        "L3Boss": {
+            "speed": 0.75,
+            "health": 1500,
+            "damage": 75,
+            "behavior": "boss"
+        }
+    },
+
+    "projectiles": {
+        "basic": {
+            "speed": 10,
+            "damage": 20,
+            "range": 500
+        },
+        "explosive": {
+            "speed": 8,
+            "damage": 50,
+            "range": 400,
+            "effect": "explosive"
+        },
+        "piercing": {
+            "speed": 12,
+            "damage": 15,
+            "range": 600,
+            "effect": "piercing"
+        }
+    }
+
+
+}

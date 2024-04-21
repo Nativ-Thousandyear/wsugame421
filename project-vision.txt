@@ -1,0 +1,82 @@
+Team Members:
+
+Jerrod
+Nico
+Ben
+Rubayet
+
+587 Project Vision Statement: "Fire and Ice Frontline"
+
+1. Game Overview
+"Fire and Ice Frontline" is a fast-paced top-down shooter game designed in MonoGame. The game is a thrilling, short-duration experience over four distinct phases.
+The player controls a hero character, navigating through waves of enemies and battling bosses with increasing difficulty.
+
+2. Gameplay Duration and Phases
+
+Total Duration: Approximately 2-3 minutes.
+Phase 1: Regular play with grunt enemies (45 seconds).
+Phase 2: Mid-boss attack (30 seconds).
+Phase 3: Additional grunt enemies (45 seconds).
+Phase 4: Final boss attack with two stages (60 seconds).
+
+3. Enemy Types
+
+Grunt Enemies: Standard foes with basic attack patterns.
+Mid-Boss: A stronger enemy with more elaborate attacks.
+Final Boss: The most powerful enemy with two distinct stages of attack, mimicking specific patterns from the reference video (01:36 – 02:22, and 03:07 – 03:52).
+
+4. Player Character and Controls
+
+Hero: The main character controlled by the player.
+Movement: Standard WASD for navigation.
+Sprint: Left Shift to temporarily increase movement speed.
+Attack: Aim with mouse and left-click to shoot fireballs.
+
+5. Game Mechanics
+
+Health System: The Hero has a health bar. Zero health indicates loss of life.
+
+Scoring: Killing each enemy grants 5 points.
+
+Lives: The player starts with 3 lives.
+
+6. Detailed Phase Description
+
+Phase 1: Lasts 45 seconds. Grunt enemies approach in waves, each wave increasing in number.
+
+Phase 2: Mid-boss emerges with unique attack patterns, including a spread shot and targeted projectiles.
+
+Phase 3: A resurgence of grunts, with added complexity such as faster speeds and zigzag movements.
+
+Phase 4: The final boss appears with two stages. The first stage involves heavy artillery fire and summoning minor enemies.
+The second stage (post 30 seconds), the boss transforms, adopting a different attack pattern in the new phase. The boss will 
+enrage if still alive after 110 seconds dealing additional damage.
+
+7. Boss Health and Difficulty
+
+Mid-Boss Health: 100 HP.
+Final Boss Health: 200 HP (100 HP per stage).
+
+8. Development Plan
+
+Initial Setup: Refine current hero movement and shooting mechanics.
+
+Enemy Design: Four distinct enemy types with unique behaviors.
+
+Boss Mechanics: Implement the two-stage final boss with specified attack patterns.
+
+Scoring and Health System: Further develop the scoring logic and hero's health management.
+
+Playtesting: Regular testing phases to balance difficulty and gameplay.
+
+Revision: Sound effects and user interface.
+
+9. Milestones
+
+Prototype Completion: Basic gameplay with all enemy types (1 month).
+
+Mid-Boss Implementation: Complete mid-boss design and mechanics (1.5 months).
+
+Final Boss Implementation: Complete final boss design, including two stages (2 months).
+
+Revision and Final Testing : Debugging, balancing, and finalizing (2.5 months).
